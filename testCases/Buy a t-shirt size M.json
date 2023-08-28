@@ -1,0 +1,58 @@
+{
+  "name": "7087e1d5-c074-4003-8a20-071553e2f8bd",
+  "tags": [ "#shirts,", "#t-shirt,", "#TheGoogleFighters" ],
+  "displayName": "Buy a t-shirt size M",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Buy a t-shirt size M"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.product"
+      },
+      "currentPage": {
+        "name": "Product",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "You didn't mention which artist you are interested in. You can ask me to buy the $session.params.merch of the artist you like or ask which artists we signed. How can I help?" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "The Google Fighters"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Product",
+        "flow": "Catalog"
+      },
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1692885641,
+    "nanos": 226770000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "eb7d6102-82c6-444e-bfe2-f88752ae8d14",
+  "displayName": "redirect.home",
+  "parameters": [ {
+    "id": "artist",
+    "entityType": "@Artist"
+  } ],
+  "priority": 500000,
+  "description": "It's the user asking the agent to go back to the main menu.",
+  "numTrainingPhrases": 12
+}

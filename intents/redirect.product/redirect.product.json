@@ -1,0 +1,37 @@
+{
+  "name": "7166970f-14f4-44ac-8093-b23e287d6146",
+  "displayName": "redirect.product",
+  "parameters": [ {
+    "id": "Artist",
+    "entityType": "@Artist"
+  }, {
+    "id": "Merch",
+    "entityType": "@Merch"
+  }, {
+    "id": "Merch1",
+    "entityType": "@Merch"
+  }, {
+    "id": "Artist1",
+    "entityType": "@Artist"
+  }, {
+    "id": "ShirtSize",
+    "entityType": "@ShirtSize"
+  }, {
+    "id": "Merch2",
+    "entityType": "@Merch"
+  }, {
+    "id": "Merch3",
+    "entityType": "@Merch"
+  }, {
+    "id": "Merch4",
+    "entityType": "@Merch"
+  }, {
+    "id": "Merch5",
+    "entityType": "@Merch"
+  }, {
+    "id": "Merch6",
+    "entityType": "@Merch"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 8
+}

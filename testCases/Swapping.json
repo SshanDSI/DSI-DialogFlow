@@ -1,0 +1,39 @@
+{
+  "name": "ab530010-f65f-45d8-9bbc-44cd40884c9f",
+  "tags": [ "#swapping" ],
+  "displayName": "Swapping",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I want to swap my item"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.swapping.info"
+      },
+      "currentPage": {
+        "name": "Swapping",
+        "flow": "Customer Care"
+      },
+      "textResponses": [ {
+        "text": [ "If you would like to change your item for a different one, please return your unwanted item and place a new order. If your refund is accepted, we will refund the price you paid for your item back to your original payment method." ]
+      } ],
+      "currentFlow": {
+        "name": "Customer Care"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1692887019,
+    "nanos": 218232000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}

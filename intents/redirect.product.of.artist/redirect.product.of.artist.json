@@ -1,0 +1,11 @@
+{
+  "name": "fcbe56f5-52b3-49c3-b274-b79c42eefd0d",
+  "displayName": "redirect.product.of.artist",
+  "parameters": [ {
+    "id": "artist",
+    "entityType": "@Artist"
+  } ],
+  "priority": 500000,
+  "description": "Specific merchandize related to the specific artist. ",
+  "numTrainingPhrases": 10
+}

@@ -1,0 +1,75 @@
+{
+  "name": "265df9ce-8338-4ecf-9693-eb6862051115",
+  "displayName": "Customer Care",
+  "transitionRoutes": [ {
+    "intent": "redirect.refund.info",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Refund",
+    "name": "10964dbb-5115-47eb-a975-dd0ca8830d24"
+  }, {
+    "intent": "redirect.swapping.info",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Swapping",
+    "name": "40700ed9-ef3b-4d14-8f51-28c82441012a"
+  }, {
+    "intent": "redirect.home",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "restart",
+        "value": true
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "8dcfe6c1-8593-4228-a3cc-dcc521940775"
+  }, {
+    "intent": "redirect.end",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for contacting G-Records! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "0bf81fb3-cec7-40ca-9930-0d2b61e04f65"
+  }, {
+    "intent": "redirect.shipping.info",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Shipping",
+    "name": "fdcc8677-0367-49f2-b1bc-a54656890972"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn't get that. Can you please rephrase?", "I'm sorry, I don't understand. Can you please rephrase?", "I don't understand, please rephrase.", "Sorry, I didn't get that. What was that?", "I didn't get that, can you please rephrase?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "30e65705-359c-4612-b2d6-5fbfb9e19341"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I didn't receive an answer. Can you say it again?", "I missed your answer, can you say it again?", "Sorry, I didn't hear anything. Can you say it again?", "I couldn't hear what you were saying, what was that?", "I'm sorry, I missed your answer. What were you trying to say?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "f6fdf56b-8278-44bb-9cf7-366f1e851b3b"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

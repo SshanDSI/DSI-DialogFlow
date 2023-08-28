@@ -1,0 +1,108 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Yes of The ",
+      "auto": true
+    }, {
+      "text": "Google Dolls",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Google Dolls",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am a "
+    }, {
+      "text": "G's N' Roses",
+      "parameterId": "artist",
+      "auto": true
+    }, {
+      "text": " fan!"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Anything ",
+      "auto": true
+    }, {
+      "text": "Alice Google",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yep, give me items of "
+    }, {
+      "text": "G's N' Roses",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yes, I want to order merchandise",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yes ,I want The ",
+      "auto": true
+    }, {
+      "text": "Goo Fighters",
+      "parameterId": "artist",
+      "auto": true
+    }, {
+      "text": " stuff",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Shirts of The ",
+      "auto": true
+    }, {
+      "text": "Google Dolls",
+      "parameterId": "artist",
+      "auto": true
+    }, {
+      "text": " that would be nice.",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Give me merch of ",
+      "auto": true
+    }, {
+      "text": "Alice Googler",
+      "parameterId": "artist",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yeah, let's shop",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

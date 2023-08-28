@@ -1,0 +1,45 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I want to swap the ",
+      "auto": true
+    }, {
+      "text": "CD",
+      "parameterId": "merch",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I change my product ?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I change my "
+    }, {
+      "text": "t-shirt",
+      "parameterId": "merch",
+      "auto": true
+    }, {
+      "text": " for a "
+    }, {
+      "text": "larger",
+      "parameterId": "ShirtSize"
+    }, {
+      "text": " size?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to swap my item",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

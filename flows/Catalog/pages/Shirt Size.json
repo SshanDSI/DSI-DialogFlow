@@ -1,0 +1,129 @@
+{
+  "name": "c6d546a6-2500-4b90-8c2b-ecb8dfabade4",
+  "displayName": "Shirt Size",
+  "form": {
+    "parameters": [ {
+      "displayName": "shirtsize",
+      "required": true,
+      "entityType": "@ShirtSize",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please tell me the shirt size, such as XL." ]
+              },
+              "languageCode": "en"
+            }, {
+              "payload": {
+                "richContent": [ [ {
+                  "options": [ {
+                    "text": "XS"
+                  }, {
+                    "text": "S"
+                  }, {
+                    "text": "M"
+                  }, {
+                    "text": "L"
+                  }, {
+                    "text": "XL"
+                  }, {
+                    "text": "2XL"
+                  }, {
+                    "text": "3XL"
+                  } ],
+                  "type": "chips"
+                } ] ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5f25131d-95e7-4bc1-a904-d5fd0ccefc47"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I couldn't understand the shirt size. What size do you want?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "payload": {
+                "richContent": [ [ {
+                  "options": [ {
+                    "text": "XS"
+                  }, {
+                    "text": "S"
+                  }, {
+                    "text": "M"
+                  }, {
+                    "text": "L"
+                  }, {
+                    "text": "XL"
+                  }, {
+                    "text": "2XL"
+                  }, {
+                    "text": "3XL"
+                  } ],
+                  "type": "chips"
+                } ] ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "1464f516-9254-4920-a722-30ae725abb87"
+        } ]
+      },
+      "redact": true
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "What shirt size do you want ?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "XS"
+          }, {
+            "text": "S"
+          }, {
+            "text": "M"
+          }, {
+            "text": "L"
+          }, {
+            "text": "XL"
+          }, {
+            "text": "2XL"
+          }, {
+            "text": "3XL"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "redirect.price",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Price",
+    "name": "e0db2767-28ec-4c5b-946b-06e406abbade"
+  }, {
+    "condition": "$page.params.shirtsize != \"null\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Product",
+    "name": "5d95ef84-56e4-4ac6-bda0-cfeef170404f"
+  } ]
+}

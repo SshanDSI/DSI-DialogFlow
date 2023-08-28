@@ -1,0 +1,61 @@
+{
+  "name": "f67a149a-b858-469e-8e43-fbbb05c5132f",
+  "displayName": "Order Process",
+  "transitionRoutes": [ {
+    "intent": "redirect.end",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for contacting G-Records! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "cd9c46da-137f-454a-8d22-3d9be19503c3"
+  }, {
+    "intent": "redirect.home",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "restart",
+        "value": true
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "e9c3630e-5900-48f7-8b18-72793afda749"
+  }, {
+    "intent": "confirm.proceed.order",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Shipping Details",
+    "name": "768cf722-1b94-427a-8b48-b34dc4a42015"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn't get that. Can you please rephrase?", "I'm sorry, I don't understand. Can you please rephrase?", "I don't understand, please rephrase.", "Sorry, I didn't get that. What was that?", "I didn't get that, can you please rephrase?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "2fa79713-c43a-47d1-ac00-1964ab6d0d8c"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I didn't receive an answer. Can you say it again?", "I missed your answer, can you say it again?", "Sorry, I didn't hear anything. Can you say it again?", "I couldn't hear what you were saying, what was that?", "I'm sorry, I missed your answer. What were you trying to say?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6b96a64c-c28c-4331-ade0-6582ba8d1816"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

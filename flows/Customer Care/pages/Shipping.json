@@ -1,0 +1,15 @@
+{
+  "name": "07e8917c-1390-4b74-b8b6-01ab60afc344",
+  "displayName": "Shipping",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Shipping physical merchandise items can take up to 2 weeks.", "Is there anything else I can help you with?" ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "name": "dfbe4a01-d384-43ca-8e81-08b17fafc3a6",
+  "displayName": "Catalog",
+  "transitionRoutes": [ {
+    "intent": "redirect.artists.overview",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Artist Overview",
+    "name": "5d562752-14e0-4f9b-8465-7351be9a6ab8"
+  }, {
+    "intent": "redirect.product",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Product",
+    "name": "b169982e-9519-48c1-ac0e-144f9fa2b30d"
+  }, {
+    "intent": "redirect.product.overview",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Product Overview",
+    "name": "164f741a-2420-461c-959d-6cf77dc20a38"
+  }, {
+    "intent": "redirect.product.of.artist",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Product Overview",
+    "name": "9811af01-748c-4bac-93b4-8f74d2c52944"
+  }, {
+    "intent": "redirect.shirts",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Shirts",
+    "name": "94a7971b-4b22-4669-ba8d-ab2576a125e6"
+  }, {
+    "intent": "redirect.music",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Music ",
+    "name": "a3613b8a-e00e-4205-bedf-077444d2b444"
+  }, {
+    "intent": "redirect.end",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "d1f83eff-3961-4da5-9c91-58a37cac1f07"
+  }, {
+    "intent": "redirect.home",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "272608f7-1cad-4368-ac4f-c216e5239108"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn't get that. Can you please rephrase?", "I'm sorry, I don't understand. Can you please rephrase?", "I don't understand, please rephrase.", "I didn't get that, can you please rephrase?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "21cc64ca-eb22-48eb-8e86-73bdaaa412e8"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I didn't receive an answer. Can you say it again?", "I missed your answer, can you say it again?", "Sorry, I didn't hear anything. Can you say it again?", "I couldn't hear what you were saying, what was that?", "I'm sorry, I missed your answer. What were you trying to say?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "08003138-dbb4-4d04-ad08-4505247d5b50"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

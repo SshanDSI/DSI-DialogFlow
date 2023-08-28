@@ -1,0 +1,10 @@
+{
+  "name": "6a60249b-8548-4006-ac5c-4feae50da6c5",
+  "displayName": "redirect.my.order",
+  "parameters": [ {
+    "id": "ordernumber",
+    "entityType": "@OrderNumber"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 3
+}

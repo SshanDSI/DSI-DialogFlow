@@ -1,0 +1,14 @@
+{
+  "name": "b2763395-7b61-4e87-8900-e18c625d14df",
+  "displayName": "redirect.swapping.info",
+  "parameters": [ {
+    "id": "merch",
+    "entityType": "@Merch"
+  }, {
+    "id": "ShirtSize",
+    "entityType": "@ShirtSize"
+  } ],
+  "priority": 500000,
+  "description": "It could mean that user wants to change their merchandize or switch to the other variant with the same merchandize.",
+  "numTrainingPhrases": 4
+}

@@ -1,0 +1,92 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Can I purchase the "
+    }, {
+      "text": "Alice Googler",
+      "parameterId": "Artist"
+    }, {
+      "text": " digital "
+    }, {
+      "text": "album",
+      "parameterId": "Merch"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to buy a "
+    }, {
+      "text": "t-shirt",
+      "parameterId": "Merch1"
+    }, {
+      "text": " size "
+    }, {
+      "text": "M",
+      "parameterId": "ShirtSize"
+    }, {
+      "text": " of The "
+    }, {
+      "text": "Google Dolls",
+      "parameterId": "Artist1"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I purchase a "
+    }, {
+      "text": "record",
+      "parameterId": "Merch6"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to buy something",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want the "
+    }, {
+      "text": "CD",
+      "parameterId": "Merch2"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can I buy a digital "
+    }, {
+      "text": "album",
+      "parameterId": "Merch3"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am interested in a "
+    }, {
+      "text": "t-shirt",
+      "parameterId": "Merch4"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Tour movie",
+      "parameterId": "Merch5"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,386 @@
+{
+  "name": "9b040e6e-b0d1-44d7-8336-62d696a87650",
+  "displayName": "Shipping Details",
+  "form": {
+    "parameters": [ {
+      "displayName": "firstname",
+      "required": true,
+      "entityType": "@sys.person",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What's your first name?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry I missed that. What's the first name?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "d7c0bf85-9849-4106-823c-09f6968f9f13"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I didn't understand. What's the first name?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "ebcd07ac-fc6b-4867-ad71-8db3940559c9"
+        } ]
+      }
+    }, {
+      "displayName": "lastname",
+      "required": true,
+      "entityType": "@sys.person",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What's your last name?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry I missed that. What's the last name?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "55d5af0b-dde0-4e88-9262-5039d6b69dd9"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I didn't understand. What's the last name?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "06398fc0-f68e-4ea7-a35d-c192f5975910"
+        } ]
+      }
+    }, {
+      "displayName": "address",
+      "required": true,
+      "entityType": "@sys.address",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What's your address?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I missed that. What's the address?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "c21ed5bb-0995-4295-9468-74f670feb7c4"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I didn't understand. What's the address?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "aa62d9f1-5759-44b2-8cc6-4909bcc433cc"
+        } ]
+      }
+    }, {
+      "displayName": "zipcode",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What postal code or zipcode do you have?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, what's the zip or postal code? For example: 1234AB or 10001." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "19bc7035-eee0-4908-a2c7-76ef4ffc940e"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I didn't understand. What's the zip or postal code? For example: 1234AB or 10001." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "dfffa6a7-8672-4304-957f-08b3cca626ec"
+        } ]
+      }
+    }, {
+      "displayName": "city",
+      "required": true,
+      "entityType": "@sys.geo-city",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What's the name of the city?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I missed that, what's the name of the city?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "8ea9415c-f4cc-4e06-8596-fbe6166ba214"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I didn't understand. What's the name of the city?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "a875219a-7722-452b-b89f-cb5fb0dd0df4"
+        } ]
+      }
+    }, {
+      "displayName": "country",
+      "required": true,
+      "entityType": "@sys.geo-country",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What's the name of the country?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I missed that, what's the name of the country?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "429c2276-5ca4-445f-8274-ce6c7b12b205"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm sorry, I didn't understand. What's the name of the country?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "735d3a1d-296f-4a8d-acdd-c8a6b1299711"
+        } ]
+      }
+    }, {
+      "displayName": "email",
+      "required": true,
+      "entityType": "@sys.email",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Lastly, what's your email address?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I am sorry. What's the email address? For example name@domain.com." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5728ac7d-cf9d-4775-9830-18420dc38b13"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I am sorry, I didn't understand. What's the email address? For example name@domain.com." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "839a1a43-f008-44ee-8319-698efe5e8850"
+        } ]
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm.proceed.order",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for your order! Your merchandise will be shipped today!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Here's the order number: ABCD123" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Have a good day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "a8f311b3-0396-4912-8b01-0fc74f80c16f"
+  }, {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Alright $session.params.firstname! We will make use of Google Pay, that's connected to your email account: $session.params.email." ]
+        },
+        "languageCode": "en"
+      } ],
+      "conditionalCases": [ {
+        "cases": [ {
+          "condition": "$session.params.merch != \"Digital Album\"",
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "Shipping costs an additional 5 dollars. This will make the total price $$sys.func.TO_TEXT($sys.func.ADD($session.params.price, 5))." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Your merchandise will be shipped to:" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "$session.params.firstname $session.params.lastname" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "$session.params.address" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "$session.params.zipcode $session.params.city" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "$session.params.country" ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "To continue the order process please explicitly say \"I confirm\". Do you want to confirm your $session.params.artist $session.params.merch order?" ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        }, {
+          "caseContent": [ {
+            "message": {
+              "text": {
+                "text": [ "The total costs will be: $$session.params.price." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "After purchasing the digital album, you will receive an email with the download link." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "To continue the order process please explicitly say \"I confirm\"." ]
+              },
+              "languageCode": "en"
+            }
+          }, {
+            "message": {
+              "text": {
+                "text": [ "Do you want to confirm your $session.params.artist $session.params.merch order?" ]
+              },
+              "languageCode": "en"
+            }
+          } ]
+        } ]
+      } ]
+    },
+    "targetPage": "Payment Details",
+    "name": "74803cb4-e2e3-4206-af44-ea7c9dec2f8c"
+  } ]
+}

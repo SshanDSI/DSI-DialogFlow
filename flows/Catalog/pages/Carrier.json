@@ -1,0 +1,101 @@
+{
+  "name": "06d81be5-daa5-4a7c-9478-d6e0ea11e04e",
+  "displayName": "Carrier",
+  "form": {
+    "parameters": [ {
+      "displayName": "merch",
+      "required": true,
+      "entityType": "@Merch",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Do you want a physical CD or the digital album?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "payload": {
+                "richContent": [ [ {
+                  "options": [ {
+                    "text": "CD"
+                  }, {
+                    "text": "Digital Album"
+                  } ],
+                  "type": "chips"
+                } ] ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "aa5c28af-4758-4c52-8e66-cafac16ca2c9"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I couldn't understand if you mean CD or MP3. Which one do you want?" ]
+              },
+              "languageCode": "en"
+            }, {
+              "payload": {
+                "richContent": [ [ {
+                  "options": [ {
+                    "text": "CD"
+                  }, {
+                    "text": "MP3"
+                  } ],
+                  "type": "chips"
+                } ] ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "8fbb2d25-0123-47fd-9157-b83ef34dfdc3"
+        } ]
+      },
+      "redact": true
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Do you want this album on CD or MP3?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "CD"
+          }, {
+            "text": "MP3"
+          }, {
+            "text": "Price?"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "redirect.price",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Price",
+    "name": "fcaffc80-f808-45f2-bc4c-5b609a6c2dc7"
+  }, {
+    "condition": "$page.params.merch != \"null\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Product",
+    "name": "753c6f09-4b73-4de0-8d27-c2e152676940"
+  } ]
+}

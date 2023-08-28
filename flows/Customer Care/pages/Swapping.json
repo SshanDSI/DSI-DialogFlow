@@ -1,0 +1,15 @@
+{
+  "name": "5415e8da-f0b7-47b7-8197-b76e9eb14f6a",
+  "displayName": "Swapping",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "If you would like to change your item for a different one, please return your unwanted item and place a new order. If your refund is accepted, we will refund the price you paid for your item back to your original payment method.", "Is there anything else I can help you with?" ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

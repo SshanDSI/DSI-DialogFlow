@@ -1,0 +1,13 @@
+{
+  "name": "7d425b78-6d5b-4d43-a162-32f635ff01f0",
+  "displayName": "redirect.music",
+  "parameters": [ {
+    "id": "artist",
+    "entityType": "@Artist"
+  }, {
+    "id": "merch",
+    "entityType": "@Merch"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 7
+}

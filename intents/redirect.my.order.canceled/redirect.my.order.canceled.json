@@ -1,0 +1,11 @@
+{
+  "name": "97a8a855-0ad1-4ffc-9eea-8e108ff921d5",
+  "displayName": "redirect.my.order.canceled",
+  "parameters": [ {
+    "id": "ordernumber",
+    "entityType": "@OrderNumber"
+  } ],
+  "priority": 500000,
+  "description": "User asking the agent to cancel the order.",
+  "numTrainingPhrases": 6
+}

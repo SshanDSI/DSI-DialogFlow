@@ -1,0 +1,11 @@
+{
+  "name": "a26331e3-761b-4474-98b5-cb610fb14896",
+  "displayName": "redirect.end",
+  "parameters": [ {
+    "id": "artist",
+    "entityType": "@Artist"
+  } ],
+  "priority": 500000,
+  "description": "It indicates that the user wants to end the conversation here. (END the chat session)",
+  "numTrainingPhrases": 12
+}

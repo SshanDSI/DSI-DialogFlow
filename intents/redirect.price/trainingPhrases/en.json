@@ -1,0 +1,78 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "What is the price ?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What does it cost?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What does each product costs?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What's the price difference ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to know the price of a ",
+      "auto": true
+    }, {
+      "text": "longsleeve shirt",
+      "parameterId": "merch",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The "
+    }, {
+      "text": "album",
+      "parameterId": "merch",
+      "auto": true
+    }, {
+      "text": " is how much ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What's the price for the ",
+      "auto": true
+    }, {
+      "text": "tour movie",
+      "parameterId": "merch",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How much does a "
+    }, {
+      "text": "t-shirt",
+      "parameterId": "merch"
+    }, {
+      "text": " cost ?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

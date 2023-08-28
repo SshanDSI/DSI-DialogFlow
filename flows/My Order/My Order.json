@@ -1,0 +1,75 @@
+{
+  "name": "31afc97b-e2ea-4287-824c-5867911920e7",
+  "displayName": "My Order",
+  "transitionRoutes": [ {
+    "intent": "redirect.my.order",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "My Order",
+    "name": "49039f80-e5e0-40ca-a3cb-a9f6bd72142d"
+  }, {
+    "intent": "redirect.my.order.status",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "My Order Status",
+    "name": "ec8d0670-4adc-4efb-ad7f-e5ec79895b76"
+  }, {
+    "intent": "redirect.my.order.canceled",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "My Order Cancellation",
+    "name": "b4b57369-f40f-4c9d-8a54-f37a8f884d04"
+  }, {
+    "intent": "redirect.end",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for contacting G-Records! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "5308b264-1cb8-4359-b611-74a85e5eda1d"
+  }, {
+    "intent": "redirect.home",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "restart",
+        "value": true
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "ff372e01-c162-42d2-9fc9-686905e89a9b"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn't get that. Can you please rephrase?", "I'm sorry, I don't understand. Can you please rephrase?", "I don't understand, please rephrase.", "Sorry, I didn't get that. What was that?", "I didn't get that, can you please rephrase?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "401eaed9-2215-4ec9-afe4-ff691dfbe5be"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I didn't receive an answer. Can you say it again?", "I missed your answer, can you say it again?", "Sorry, I didn't hear anything. Can you say it again?", "I couldn't hear what you were saying, what was that?", "I'm sorry, I missed your answer. What were you trying to say?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "dcd6143f-3f0f-4caa-837e-102a0aecec5b"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

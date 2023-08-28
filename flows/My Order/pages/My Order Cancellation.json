@@ -1,0 +1,61 @@
+{
+  "name": "437c97f8-22c3-4a9b-adf2-51a72d6e7f9d",
+  "displayName": "My Order Cancellation",
+  "form": {
+    "parameters": [ {
+      "displayName": "ordernumber",
+      "required": true,
+      "entityType": "@OrderNumber",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What's the order number? For example ABCD123." ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To proceed with your order I will need an order number. Order numbers start with 4 characters and end with 3 numbers, such as ABCD123. Which order number may I use?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "af3b6d10-460c-4cc1-af88-b7f3d1b2dc18"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I missed that. To proceed with your order I will need an order number. Order numbers start with 4 characters and end with 3 numbers, such as ABCD123. Which order number may I use?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "daf6601d-271c-4fdf-ab08-f19c84fbb530"
+        } ]
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.ordernumber = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Your order $session.params.ordernumber has been canceled." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Is there anything else I can help you with?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "60dfd9c7-b1f6-4ead-8305-ac507b473da8"
+  } ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "e6bd8a16-e296-41e4-a208-e1248d01753e",
+  "displayName": "redirect.product.overview",
+  "priority": 500000,
+  "description": "It gives an overview of all the stuffs that are currently sold by the company.",
+  "numTrainingPhrases": 8
+}

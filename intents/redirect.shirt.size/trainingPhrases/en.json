@@ -1,0 +1,48 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Extra Large",
+      "parameterId": "shirtsize"
+    }, {
+      "text": " is the size"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My size is "
+    }, {
+      "text": "3XL",
+      "parameterId": "shirtsize"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want ",
+      "auto": true
+    }, {
+      "text": "Large",
+      "parameterId": "shirtsize",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I have "
+    }, {
+      "text": "M",
+      "parameterId": "shirtsize"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "XS",
+      "parameterId": "shirtsize"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

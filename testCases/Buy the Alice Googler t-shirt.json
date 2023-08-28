@@ -1,0 +1,58 @@
+{
+  "name": "c920131a-8a75-4e89-8f1b-218227f08f9a",
+  "tags": [ "#catalog,", "#shirts,", "#t-shirt,", "#AliceGoogler" ],
+  "displayName": "Buy the Alice Googler t-shirt",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Buy the Alice Googler t-shirt."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.product"
+      },
+      "currentPage": {
+        "name": "Product",
+        "flow": "Catalog"
+      },
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "XL"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Product",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "I don't understand, please rephrase." ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1692885561,
+    "nanos": 546208000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}

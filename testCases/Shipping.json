@@ -1,0 +1,39 @@
+{
+  "name": "25ca82bb-99df-4687-99e8-86bfa9cb825b",
+  "tags": [ "#shipping" ],
+  "displayName": "Shipping",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How long will the shipping take ?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.shipping.info"
+      },
+      "currentPage": {
+        "name": "Shipping",
+        "flow": "Customer Care"
+      },
+      "textResponses": [ {
+        "text": [ "Shipping physical merchandise items can take up to 2 weeks." ]
+      } ],
+      "currentFlow": {
+        "name": "Customer Care"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1692886555,
+    "nanos": 717155000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}

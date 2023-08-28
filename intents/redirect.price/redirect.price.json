@@ -1,0 +1,11 @@
+{
+  "name": "ff7d7537-8c58-4881-91c4-7e44ab4e91c8",
+  "displayName": "redirect.price",
+  "parameters": [ {
+    "id": "merch",
+    "entityType": "@Merch"
+  } ],
+  "priority": 500000,
+  "description": "User asking the agent about the pricing of the merchandize.",
+  "numTrainingPhrases": 8
+}

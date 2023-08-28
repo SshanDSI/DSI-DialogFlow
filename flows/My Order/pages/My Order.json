@@ -1,0 +1,111 @@
+{
+  "name": "fb80e58b-dc05-48e2-baae-bf93877c72ac",
+  "displayName": "My Order",
+  "form": {
+    "parameters": [ {
+      "displayName": "ordernumber",
+      "required": true,
+      "entityType": "@OrderNumber",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What's the order number? For example ABCD123." ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "To proceed with your order I will need an order number. Order numbers start with 4 characters and end with 3 numbers, such as ABCD123. Which order number may I use?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "ef39c996-9734-4f8e-b17d-ea71039f543e"
+        }, {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I missed that. To proceed with your order I will need an order number. Order numbers start with 4 characters and end with 3 numbers, such as ABCD123. Which order number may I use?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "bf5956fa-7ae1-413c-b147-dfb73160c24c"
+        } ]
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I can look up the status of your order, or I can cancel an order." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "And do you want to Cancel your order, or should I look up the status?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "d89cad4c-467b-4905-b61c-608e56f9e4ae"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, what was that? Would you like me to cancel an order or look up the status?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Status"
+            }, {
+              "text": "Cancel"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9d461843-fb88-4f7c-87ce-a84e822cbad5"
+  }, {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Would you like me to cancel an order or lookup the status?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Status"
+            }, {
+              "text": "Cancel"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "59ca0b54-8e7a-41bf-aa1e-988f410b3d49"
+  } ]
+}

@@ -1,0 +1,179 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome, I am the virtual agent of G-Records, a fictional rock label. You can order artists merchandise, ask questions about your order or shipping, and I can tell you more which artists are currently signed with us. How can I help?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Which artists?"
+            }, {
+              "text": "Which products?"
+            }, {
+              "text": "About my order..."
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "0d71e705-8e5a-4610-a653-e3488e1be1c5"
+  }, {
+    "intent": "redirect.artists.overview",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Catalog",
+    "name": "152f16e2-ea66-4354-8a30-986cb324808d"
+  }, {
+    "intent": "redirect.product.overview",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Catalog",
+    "name": "f178f2df-548b-473a-851b-810d8eac19e5"
+  }, {
+    "intent": "redirect.shirts",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Catalog",
+    "name": "09218175-1543-4ea2-9782-899f46fbe1bf"
+  }, {
+    "intent": "redirect.music",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Catalog",
+    "name": "4741f3a1-da32-4476-b8c5-792a974bea04"
+  }, {
+    "intent": "redirect.product",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Catalog",
+    "name": "4cc7929c-5c02-4a81-863c-fb267219f35c"
+  }, {
+    "intent": "redirect.product.of.artist",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Catalog",
+    "name": "86b3d7f0-8d4c-4396-89ff-4680a8a25546"
+  }, {
+    "intent": "redirect.refund.info",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Customer Care",
+    "name": "b62ffcee-daa1-4bb7-9892-2fd249ab8e8c"
+  }, {
+    "intent": "redirect.shipping.info",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Customer Care",
+    "name": "451cab0d-aca0-4ccc-9dfb-e83cd560e01b"
+  }, {
+    "intent": "redirect.swapping.info",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Customer Care",
+    "name": "ed047bbc-e264-4c22-93a0-40fb6c442497"
+  }, {
+    "intent": "redirect.my.order",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "My Order",
+    "name": "fdcbe3de-ee95-43d0-8b44-f66c569a0507"
+  }, {
+    "intent": "redirect.my.order.canceled",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "My Order",
+    "name": "526ccf08-a771-4f90-b899-8500064a3fe1"
+  }, {
+    "intent": "redirect.my.order.status",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "My Order",
+    "name": "b2457287-eae8-410d-b196-ce2d9137a1eb"
+  }, {
+    "intent": "redirect.end",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for contacting G-Records! Have a nice day!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "c411c8d5-0eba-4c93-82c2-ad7c6c17305b"
+  }, {
+    "condition": "$session.params.restart = \"true\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "\"Welcome back, as the virtual agent of G-Records, I can help you order artists merchandise, you can ask questions about your order or shipping, and I can tell you more which artists are currently signed with us. How can I help?\"" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Which artists?"
+            }, {
+              "text": "Which products?"
+            }, {
+              "text": "About my order..."
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1299589e-291f-4ea9-83c4-62c0f3d4bc1b"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn't get that. Can you please rephrase?", "I'm sorry, I don't understand. Can you please rephrase?", "I don't understand, please rephrase.", "Sorry, I didn't get that. What was that?", "I didn't get that, can you please rephrase?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "8ed7d0bc-bdb4-4aa4-a783-adc59ac65c15"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry, I didn't receive an answer. Can you say it again?", "I missed your answer, can you say it again?", "Sorry, I didn't hear anything. Can you say it again?", "I couldn't hear what you were saying, what was that?", "I'm sorry, I missed your answer. What were you trying to say?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "7bb65e92-3ced-45b9-80ab-182685d47cd9"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

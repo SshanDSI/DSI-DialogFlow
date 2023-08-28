@@ -1,0 +1,468 @@
+{
+  "name": "27ad268b-5a31-4238-8b61-17083d77c0c9",
+  "tags": [ "#catalog,", "#music,", "#tourmovie,", "#shirts" ],
+  "displayName": "Price info",
+  "notes": "Test price info on various points in the dialogue",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Which products"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.product.overview"
+      },
+      "currentPage": {
+        "name": "Product Overview",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "We sell shirts, music or the tour movie." ]
+      }, {
+        "text": [ "From which of these artists would you like to order merchandise?" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Shirts"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.shirts"
+      },
+      "currentPage": {
+        "name": "Shirts",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "Do you want a longsleeve or a t-shirt?" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "What's the price difference?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.price"
+      },
+      "currentPage": {
+        "name": "Shirts",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "A t-shirt costs $25 and a longsleeve costs $30." ]
+      }, {
+        "text": [ "Do you want a longsleeve or a t-shirt?" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Longsleeve"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Shirts",
+        "flow": "Catalog"
+      },
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "What does it cost?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.price"
+      },
+      "currentPage": {
+        "name": "Shirt Size",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "A t-shirt costs $25 and a longsleeve costs $30." ]
+      }, {
+        "text": [ "What shirt size do you want ?" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "M"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Product",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "You didn't mention which artist you are interested in. You can ask me to buy the LongSleeve of the artist you like or ask which artists we signed. How can I help?" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "The Google Dolls"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Product",
+        "flow": "Catalog"
+      },
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "No"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Product",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "I didn't get that, can you please rephrase?" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Which bands"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.artists.overview"
+      },
+      "currentPage": {
+        "name": "Product",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "The following bands are signed with G-Records: Alice Googler, G's N' Roses, The Goo Fighters and The Google Dolls." ]
+      }, {
+        "text": [ "You want to rock with The Google Dolls merchandise. Awesome!" ]
+      }, {
+        "text": [ "We sell shirts, music or the tour movie." ]
+      }, {
+        "text": [ "Alright! LongSleeve of The Google Dolls, let's go!" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "The Gooo Fighters"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.product.of.artist"
+      },
+      "currentPage": {
+        "name": "c10ae3fc-985d-4ecc-a2c1-cb9508c825e6",
+        "flow": "Catalog"
+      },
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Music"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.music"
+      },
+      "currentPage": {
+        "name": "Music ",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "We have a Greatest Hits Album or the Live Album. Which one do you want?" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How much does it cost ?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.price"
+      },
+      "currentPage": {
+        "name": "Music ",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "A CD costs $15. The digital album on MP3 costs $10." ]
+      }, {
+        "text": [ "We have a Greatest Hits Album or the Live Album. Which one do you want?" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Greatest hits"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Carrier",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "Do you want this album on CD or MP3?" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "What is the price difference ?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.price"
+      },
+      "currentPage": {
+        "name": "Price",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "A CD costs $15. The digital album on MP3 costs $10." ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Mp3"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.product"
+      },
+      "currentPage": {
+        "name": "Product",
+        "flow": "Catalog"
+      },
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "No"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Product",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "I didn't get that, can you please rephrase?" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I want to buy the tour movie"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.product"
+      },
+      "currentPage": {
+        "name": "Confirmation",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "The Tour Movie of The Goo Fighters costs $25. Shall I continue to order?" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Alice Googler"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "redirect.product.of.artist"
+      },
+      "currentPage": {
+        "name": "c10ae3fc-985d-4ecc-a2c1-cb9508c825e6",
+        "flow": "Catalog"
+      },
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Yes"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "c10ae3fc-985d-4ecc-a2c1-cb9508c825e6",
+        "flow": "Catalog"
+      },
+      "textResponses": [ {
+        "text": [ "I didn't get that, can you please rephrase?" ]
+      } ],
+      "currentFlow": {
+        "name": "Catalog"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1692885998,
+    "nanos": 837482000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}
